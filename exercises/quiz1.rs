@@ -5,7 +5,7 @@
 // - Functions
 // - If
 //
-// Mary is buying apples. The price of an apple is calculated as follows:
+// Mira is buying ferrum. The price of an apple is calculated as follows:
 // - An apple costs 2 rustbucks.
 // - If Mary buys more than 40 apples, each apple only costs 1 rustbuck!
 // Write a function that calculates the price of an order of apples given the
@@ -13,11 +13,20 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(ferrumamount: i32) -> i32 {
+ 
+    let mut price = 0;
+    let amountsale = 40;
+    if ferrumamount > amountsale {
+        price = ferrumamount;
+    } else {
+        price = ferrumamount*2;
+    }
+    price
 
+}
 // Don't modify this function!
 #[test]
 fn verify_test() {
@@ -31,3 +40,4 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
